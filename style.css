@@ -26,4 +26,23 @@
     margin-left: 30%;
     height: 25px;
     border-radius: 0 0 15px 15px;
+    position: relative;
+}
+
+.camera{
+    background-color: white;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    position: absolute;
+    left: 10px;
+    top: 2px;
+}
+
+
+@media (max-width: 390px) {
+    .small-container{
+        width: 90%;
+        height: 90%;
+    }
 }
