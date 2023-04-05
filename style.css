@@ -43,6 +43,6 @@
 @media (max-width: 390px) {
     .small-container{
         width: 90%;
-        height: 90%;
+        height: 90vh;
     }
 }
