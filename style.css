@@ -51,11 +51,38 @@
 
 .home-btn-div{    
     background-color: rgba(30, 30, 31, 0.753);
-    width: 95%;
+    width: 85%;
     position: absolute;
     bottom: 10px;
-    height: 60px;
     border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px 7px 10px;
+}
+
+.img-call{
+    width: 52px;
+}
+
+.img-saf{
+    background-color: white;
+    width: 42px;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.img-msg{
+    width: 52px;
+}
+
+.img-apple{
+    width: 47px;
+}
+
+button{
+    background-color: inherit;
+    width: fit-content;
 }
 
 
