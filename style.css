@@ -315,3 +315,10 @@ button:hover{
         height: 100vh;
     }
 }
+
+@media (max-width: 429px) {
+    .small-container{
+        width: 90vw;
+        height: 80vh;
+    }
+}

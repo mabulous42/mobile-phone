@@ -15,8 +15,7 @@ dele.style.display = "none";
 showAddNumber.style.display = "none";
 callSection.style.display = "none";
 callingSection.style.display = "none";
-callingNumber.innerHTML = display.value;
-callStatus.innerHTML = "calling..."
+
 
 
 
@@ -69,8 +68,12 @@ function gotoHome() {
     callSection.style.display = "none";
 }
 
+callingNumber.innerHTML = "";
+callingNumber.innerHTML = display.value;
+
+callStatus.innerHTML = "calling..."
 function abortCall() {    
-    callStatus.innerHTML = "call ended";
+    // callStatus.innerHTML = "call ended";
     setTimeout(() => {
         callingSection.style.display = "none";
     }, 2000);
