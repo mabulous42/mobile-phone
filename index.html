@@ -45,7 +45,7 @@
             </div>
             <div class="home-btn-parent-div">
                 <div class="home-btn-div">
-                    <div id="call">
+                    <div id="call" onclick="phone()">
                         <img src="./images/call-btn.png" alt="" class="img-call">
                     </div>
                     <div id="saf">
@@ -93,7 +93,9 @@
                             <button onclick="showKey('5')">5</button>
                             <button onclick="showKey('8')">8</button>
                             <button onclick="showKey('0')">0</button>
-                            <button></button>
+                            <div id="green-call-btn-div" onclick="dialNumber()">
+                                <img src="./images/Green-Call-Button-PNG-Image-Background.png" alt="" id="green-call-btn">
+                            </div>
                         </div>
                         <div class="row3">                            
                             <button onclick="showKey('3')">3</button>
@@ -105,6 +107,7 @@
                             </button>
                         </div>
                     </div>
+                    <div id="home" onclick="gotoHome()"></div>
                 </div>
             </div>
 
