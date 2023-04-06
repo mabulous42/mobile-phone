@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,24 +10,28 @@
     <script src="https://kit.fontawesome.com/85310ecdcf.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="icofont/icofont.min.css">
 </head>
+
 <body>
     <div class="big-container">
         <div class="small-container">
-            <div class="notch">
-                <div class="camera"></div>
-            </div>
-            <div class="time-network">
-                <div class="time-section">
-                    <p id="hour"></p>
-                    <p>:</p>
-                    <p id="minutes"></p>
+            <div>
+                <div class="notch">
+                    <div class="camera"></div>
                 </div>
-                <div class="network-battery-section">
-                    <div><i class="icofont-signal"></i></div>
-                    <div class="lte">LTE</div>
-                    <div class="battery"><i class="fa-solid fa-battery-half"></i></div>
+                <div class="time-network">
+                    <div class="time-section">
+                        <p id="hour"></p>
+                        <p>:</p>
+                        <p id="minutes"></p>
+                    </div>
+                    <div class="network-battery-section">
+                        <div><i class="icofont-signal"></i></div>
+                        <div class="lte">LTE</div>
+                        <div class="battery"><i class="fa-solid fa-battery-half"></i></div>
+                    </div>
                 </div>
             </div>
+            
             <div class="home-screen">
                 <div class="photo-div">
                     <img src="./images/photos.avif" alt="" class="img-photos">
@@ -35,12 +40,12 @@
                 <div class="cam-div">
                     <img src="./images/camera.webp" alt="" class="img-cam">
                     <p>Camera</p>
-                </div> 
-                
+                </div>
+
             </div>
             <div class="home-btn-parent-div">
                 <div class="home-btn-div">
-                    <div id="call" >
+                    <div id="call">
                         <img src="./images/call-btn.png" alt="" class="img-call">
                     </div>
                     <div id="saf">
@@ -54,10 +59,59 @@
                     </div>
                 </div>
             </div>
-            
+
+            <div id="call-section-div">
+                <div class="mini-call-section">
+                    <div id="show-number">                        
+                        <div class="time-network">
+                            <div class="time-section">
+                                <p id="hour"></p>
+                                <p>:</p>
+                                <p id="minutes"></p>
+                            </div>
+                            <div class="network-battery-section">
+                                <div><i class="icofont-signal"></i></div>
+                                <div class="lte">LTE</div>
+                                <div class="battery"><i class="fa-solid fa-battery-half"></i></div>
+                            </div>
+                        </div>
+                        <div class="input-div">
+                            <!-- <h1 id="show-key"></h1> -->
+                            <input type="text" name="" id="show-key">
+                            <p id="add-number-text">Add Number</p>
+                        </div>
+                    </div>                    
+                    <div id="numbers">
+                        <div class="row1">
+                            <button onclick="showKey('1')">1</button>
+                            <button onclick="showKey('4')">4</button>
+                            <button onclick="showKey('7')">7</button>
+                            <button onclick="showKey('*')">*</button>
+                        </div>
+                        <div>                            
+                            <button onclick="showKey('2')">2</button>
+                            <button onclick="showKey('5')">5</button>
+                            <button onclick="showKey('8')">8</button>
+                            <button onclick="showKey('0')">0</button>
+                            <button></button>
+                        </div>
+                        <div class="row3">                            
+                            <button onclick="showKey('3')">3</button>
+                            <button onclick="showKey('6')">6</button>
+                            <button onclick="showKey('9')">9</button>
+                            <button onclick="showKey('#')">#</button>
+                            <button id="no-color-btn">
+                                <i class="fa-solid fa-delete-left" id="delete" onclick="del()"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
-    
+
     <script src="script.js"></script>
 </body>
+
 </html>
