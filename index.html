@@ -31,7 +31,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="home-screen">
                 <div class="photo-div">
                     <img src="./images/photos.avif" alt="" class="img-photos">
@@ -62,7 +62,7 @@
 
             <div id="call-section-div">
                 <div class="mini-call-section">
-                    <div id="show-number">                        
+                    <div id="show-number">
                         <div class="time-network">
                             <div class="time-section">
                                 <p id="hour"></p>
@@ -80,7 +80,7 @@
                             <input type="text" name="" id="show-key">
                             <p id="add-number-text">Add Number</p>
                         </div>
-                    </div>                    
+                    </div>
                     <div id="numbers">
                         <div class="row1">
                             <button onclick="showKey('1')">1</button>
@@ -88,16 +88,17 @@
                             <button onclick="showKey('7')">7</button>
                             <button onclick="showKey('*')">*</button>
                         </div>
-                        <div>                            
+                        <div>
                             <button onclick="showKey('2')">2</button>
                             <button onclick="showKey('5')">5</button>
                             <button onclick="showKey('8')">8</button>
                             <button onclick="showKey('0')">0</button>
                             <div id="green-call-btn-div" onclick="dialNumber()">
-                                <img src="./images/Green-Call-Button-PNG-Image-Background.png" alt="" id="green-call-btn">
+                                <img src="./images/Green-Call-Button-PNG-Image-Background.png" alt=""
+                                    id="green-call-btn">
                             </div>
                         </div>
-                        <div class="row3">                            
+                        <div class="row3">
                             <button onclick="showKey('3')">3</button>
                             <button onclick="showKey('6')">6</button>
                             <button onclick="showKey('9')">9</button>
@@ -109,6 +110,17 @@
                     </div>
                     <div id="home" onclick="gotoHome()"></div>
                 </div>
+            </div>
+
+            <div id="calling-section">
+                <div class="inner-call-div">
+                    <h1 id="calling-number"></h1>
+                    <h4 id="call-status"></h4>
+                    <div id="end-call-btn" onclick="abortCall()">
+                        <img src="./images/call-end.png" alt="" class="img-call-end">
+                    </div>
+                </div>
+
             </div>
 
         </div>

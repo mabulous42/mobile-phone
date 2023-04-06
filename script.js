@@ -6,11 +6,17 @@ let showAddNumber = document.getElementById("add-number-text");
 let callNumber = document.getElementById("green-call-btn-div");
 let callSection = document.getElementById("call-section-div");
 let phoneCall = document.getElementById("call");
+let callingNumber = document.getElementById("calling-number");
+let callStatus = document.getElementById("call-status");
+let callingSection = document.getElementById("calling-section");
 
 
 dele.style.display = "none";
 showAddNumber.style.display = "none";
 callSection.style.display = "none";
+callingSection.style.display = "none";
+callingNumber.innerHTML = display.value;
+callStatus.innerHTML = "calling..."
 
 
 
@@ -53,9 +59,21 @@ function phone() {
 }
 
 function dialNumber() {
+    callingSection.style.display = "block";
+    callSection.style.display = "none";
+    display.value = "";
 
 }
 
 function gotoHome() {
     callSection.style.display = "none";
+}
+
+function abortCall() {    
+    callStatus.innerHTML = "call ended";
+    setTimeout(() => {
+        callingSection.style.display = "none";
+    }, 2000);
+    callSection.style.display = "block";
+    
 }
