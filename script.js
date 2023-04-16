@@ -106,7 +106,7 @@ async function startCamera() {
     video.srcObject = thePix;
 }
 
-// function takePix() {
-//     canvas.getContext("2d").drawImage(video, 0, 0, canvas.width, canvas.height);
-
-// }
+function takePix() {
+    canvas.getContext("2d").drawImage(video, 0, 0, canvas.width, canvas.height);
+    
+}
